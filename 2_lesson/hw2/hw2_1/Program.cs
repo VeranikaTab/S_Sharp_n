@@ -17,3 +17,22 @@ else
 {
 Console.WriteLine("Число не трехзначное");
 }
+
+
+// или так 
+void Cif(int num)
+{
+    if (num < 999 && num > 99)
+    {
+        int a3 = num / 10;
+        int a2 = a3 % 10;
+        Console.WriteLine(a2);
+    }
+    else
+    {
+    Console.WriteLine("Число не трехзначное");
+    }
+}
+Cif(456);
+Cif(782);
+Cif(918);
