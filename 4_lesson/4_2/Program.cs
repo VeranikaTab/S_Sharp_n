@@ -1,14 +1,16 @@
 ﻿// 2. Напишите программу, которая принимает на вход
 //    число N и выдаёт произведение чисел от 1 до N.
 
-int Proiz(int num)
+int PowNum(int num)
 {
-    int all_sum = 1;
+    int all_mul = 1;
     for (int i = 1; i <= num; i++)
     {
-        all_sum = all_sum * i;
+        all_mul *= i;
     }
-    return all_sum;
+    return all_mul;
 }
 
-Console.WriteLine(Proiz(int.Parse(Console.ReadLine())));
+string answer = Console.ReadLine();
+int ans = answer == null ? 0 : int.Parse(answer);
+Console.WriteLine(PowNum(ans));
