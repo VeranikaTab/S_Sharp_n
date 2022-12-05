@@ -21,9 +21,7 @@ int[] MassNums(int size, int from, int to)
 
 void PosNeg(int[] arr)
 {
-    int pos, neg;
-    pos = neg = 0;
-
+    
     for (int i = 0; i < arr.Length; i++)
     {
         arr[i] = -arr[i];
