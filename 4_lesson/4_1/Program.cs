@@ -4,19 +4,33 @@
 // 78 -> 2
 // 89126 -> 5 
 
-int NumbCount(int n)
-{
-    if(n == 0)
+int NumCount_1(ulong num)
+{   
+    int res = 0; 
+
+    for (int result = 1; num > 0; result++)
     {
-        return(1);
+        num /= 10;
+        res = result;
     }
-    int count = 0;
-    while (n > 0)
-    {
-        n = n/10;
-        count++;
-    }
-    return count; 
-    
+    return res;
 }
-Console.WriteLine(NumbCount(int.Parse(Console.ReadLine())));
+
+ulong answer = ulong.Parse(Console.ReadLine());
+Console.WriteLine(NumCount_1(answer));
+
+// 2 вариант
+
+int NumCount_2(long num)
+{
+    int result = 0;
+
+    while (num > 0)
+    {
+        num /= 10;
+        result += 1;
+    }
+    return result;
+}
+
+Console.WriteLine(NumCount_2(long.Parse(Console.ReadLine())));
