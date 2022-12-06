@@ -21,22 +21,21 @@ int[] ArrayNums(int size, int start, int last)
 
 int CountChetn(int[] arr)
 {
-    int max = 0, min = 0;
-    int rez;
+    int max = arr[0], min = arr[0];
+    int rez = 0;
 
     for (int count = 0; count < arr.Length; count++)
     {
-
-        if (arr[count] > max)
+        if (arr[count] >= max)
         {
             max = arr[count];
         }
-        else
+        if (arr[count] < min)
         {
             min = arr[count];
         }
-    }
     rez = max - min;
+    }
     return rez;
 }
 
