@@ -49,11 +49,7 @@ double CountChetn(double[] arr)
 
 double[] arr_1 = ArrayNums((int.Parse(Console.ReadLine())), (int.Parse(Console.ReadLine())), (int.Parse(Console.ReadLine())));
 
-
-
 Print(arr_1);
-//string rez = arr.ToString("#,##");
-
 Console.Write("Разница между максимальным и минимальным элементов массива: ");
 Console.Write(Math.Round(CountChetn(arr_1), 2));
 

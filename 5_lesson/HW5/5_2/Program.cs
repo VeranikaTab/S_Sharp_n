@@ -36,5 +36,3 @@ int[] arr_1 = ArrayNums(int.Parse(Console.ReadLine()),
 Print(arr_1);
 Console.Write("Cумма элементов, стоящих на нечётных позициях: ");
 Console.Write(SumNechetPos(arr_1));
-
-//
