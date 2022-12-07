@@ -39,3 +39,9 @@ int[] arr_1 = ArrayNums(int.Parse(Console.ReadLine()),
 Print(arr_1);
 Console.Write("Количество четных чисел в массиве: ");
 Console.Write(CountChetn(arr_1));
+
+
+
+
+
+/////////////////////////
