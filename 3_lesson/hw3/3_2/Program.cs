@@ -14,3 +14,4 @@ double Distan(float xa, float ya, float za, float xb, float yb, float zb)
 
 Console.WriteLine(Math.Round(Distan(3, 6, 8, 2, 1, -7), 2));
 Console.WriteLine(Math.Round(Distan(7, -5, 0, 1, -1, 9), 2));
+
