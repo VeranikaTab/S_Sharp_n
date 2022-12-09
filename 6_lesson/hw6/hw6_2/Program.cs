@@ -5,13 +5,15 @@ void Peresechenie(double b1, double k1, double b2, double k2)
 {
     double x = 0;
     double y = 0;
-    if (b1 == b2 && k1 == k2) Console.WriteLine("Совпадают");
+    if (b1 == b2 && k1 == k2) Console.WriteLine("Две прямые Совпадают");
+    else if (k1 == k2 && b1 != b2) Console.WriteLine("Две прямые Параллельны");
     else
     {
         x = (b2 - b1) / (k1 - k2);
         y = (k1 * (b2 - b1) / (k1 - k2) + b1);
+        Console.WriteLine($"Две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
     }
-    Console.WriteLine($"две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
+
 }
 Peresechenie(int.Parse(Console.ReadLine()),
        int.Parse(Console.ReadLine()),
