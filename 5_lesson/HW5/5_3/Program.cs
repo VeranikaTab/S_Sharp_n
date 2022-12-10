@@ -90,7 +90,7 @@ void DiffMaxMin(double[] arr)
     double n_max = arr[0];
     double n_min = arr[0];
 
-    for (int i = 1; i < arr.Length; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
         if (n_max < arr[i])        
             n_max = arr[i];
