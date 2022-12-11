@@ -15,7 +15,7 @@ int[] ArrayNums(int size, int start, int last)
 {
     int[] arr = new int[size];
 
-    for (int i = 0; i < size; i++)
+    for (int i = 1; i < size; i++)
         arr[i] = new Random().Next(start, last + 1);
     return arr;
 }
@@ -23,7 +23,7 @@ int[] ArrayNums(int size, int start, int last)
 int SumNechetPos(int[] arr)
 {
     int sum = 0;
-    for (int i = 1; i < arr.Length; i=i+2)
+    for (int i = 0; i < arr.Length; i=i+2)
     {
         sum = sum + arr[i];  
     }

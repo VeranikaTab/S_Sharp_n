@@ -79,7 +79,7 @@ double[] MassNums(int size, int from, int to)
     double[] arr = new double[size];
     Random n_new = new Random();
 
-    for (int i = 1; i < size; i++)    
+    for (int i = 0; i < size; i++)    
         arr[i] = Math.Round(n_new.NextDouble() * (from + to) - from, 2);
     
     return arr;
