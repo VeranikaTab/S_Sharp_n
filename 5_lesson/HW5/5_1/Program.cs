@@ -40,4 +40,9 @@ Print(arr_1);
 Console.Write("Количество четных чисел в массиве: ");
 Console.Write(CountChetn(arr_1));
 
-//
+
+
+
+
+/////////////////////////
+

@@ -27,7 +27,10 @@ double[] ArrayNums(int size, int first, int last)
     return arr;   
 }
 
+
 double MaxMin(double[] arr)
+
+
 {
     double max = arr[0]; double min = arr[0];
     double rez = 0;
@@ -50,10 +53,9 @@ double MaxMin(double[] arr)
 double[] arr_1 = ArrayNums((int.Parse(Console.ReadLine())), (int.Parse(Console.ReadLine())), (int.Parse(Console.ReadLine())));
 
 Print(arr_1);
-//string rez = arr.ToString("#,##");
-
 Console.Write("Разница между максимальным и минимальным элементов массива: ");
 Console.Write(Math.Round(MaxMin(arr_1), 2));
+
 
 
 
@@ -81,7 +83,9 @@ double[] MassNums(int size, int from, int to)
     double[] arr = new double[size];
     Random n_new = new Random();
 
+
     for (int i = 0; i < size; i++)    
+
         arr[i] = Math.Round(n_new.NextDouble() * (from + to) - from, 2);
     
     return arr;
@@ -92,7 +96,9 @@ void DiffMaxMin(double[] arr)
     double n_max = arr[0];
     double n_min = arr[0];
 
+
     for (int i = 0; i < arr.Length; i++)
+
     {
         if (n_max < arr[i])        
             n_max = arr[i];

@@ -75,8 +75,7 @@ Palindrome_1(14212);
 Palindrome_1(23432);
 Palindrome_1(12821);
 Palindrome_1(1248421);
-<<<<<<< HEAD
+
+
 Palindrome_1(12488421);
-=======
-Palindrome_1(12488421);
->>>>>>> 6_lesson
+
