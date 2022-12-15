@@ -54,7 +54,6 @@ double[] arr_1 = ArrayNums((int.Parse(Console.ReadLine())), (int.Parse(Console.R
 
 Print(arr_1);
 Console.Write("Разница между максимальным и минимальным элементов массива: ");
-
 Console.Write(Math.Round(MaxMin(arr_1), 2));
 
 
