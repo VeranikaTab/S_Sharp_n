@@ -61,7 +61,7 @@ void RowMinSumma(int[,] arr_1)
             rows = i;
         }
         sum = sumRow;
-        Console.WriteLine($"Минимальная сумма элементов равна {sum} и находится на {i + 1} строке");
+        Console.WriteLine($"Сумма элементов равна {sum} и находится на {i + 1} строке");
     }
     Console.WriteLine($"Номер строки с наименьшей суммой элементов: {rows + 1} строка");
     Console.WriteLine();
